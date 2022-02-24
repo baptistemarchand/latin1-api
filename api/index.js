@@ -4,7 +4,7 @@ const port = 4242
 
 app.get('/', (req, res) => {
   res.set('Content-Type', 'application-json')
-  const json = {lol: "Médecine"}
+  const json = {data: "é"}
   res.send(Buffer.from(JSON.stringify(json), 'latin1'))
 })
 
